@@ -23,6 +23,7 @@ class Wine():
 
   def Find_Correlation(self, data):
     result = data.corr()
+    print(result)
 
 
   def Plot_Against_Color(self, white, red):
@@ -95,5 +96,6 @@ class Wine():
 
 
 if __name__ == "__main__":
-  Wine()
+  w = Wine()
+  w.Process()
   input("Press enter to exit")  # new shit

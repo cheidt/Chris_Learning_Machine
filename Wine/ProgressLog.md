@@ -26,3 +26,41 @@ be preformed.  Ideally there would be a third thing, which is looking for
 distributions in multiple dimensions.  But I don't know how to do that and I
 can think about it right now... because I am asleep.
 
+# 09-20-2017
+
+## Mike Feedback
+
+The analysis API doesn't make sense for scaling up. Its not clear who the API
+is built for - why do I need to continuously pass in data to make plots? Are we
+expecing to use a different data set for different endpoints to the Wine class?
+
+I would avoid trying to compartmentalize/optimize the code too early so that
+you don't get yourself stuck using something you have to rebuild later (you'll
+have to rebuild it later anyway!).
+
+Nice work with the compact visualization stuff.
+
+Next: tell me what the correlation matrix means. Put your shit into a jupyter
+notebook and add some words around your analysis that describes your thought
+process. Lets see some progress on 4,5,6
+
+## Homework
+
+Put your analysis and code into a jupyter notebook with explainations of
+what/why you're doing what you're doing. You can import your code as a python
+module if you really want.
+
+Generate a model that predicts whether or not a wine is red or white. Provide
+model accuracy visualization. Your model should use the sklearn library.
+
+Hints:
+- Random Forest Classfier
+- Naive Bayes Classifier
+
+Due: Friday
+
+## Hint: take this course, its only 10 bucks.
+https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp
+
+I'm mostly familiar with everything here, so can answer your questions.
+
