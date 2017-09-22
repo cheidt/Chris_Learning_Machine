@@ -64,3 +64,12 @@ https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp
 
 I'm mostly familiar with everything here, so can answer your questions.
 
+22-09-2017
+
+Feel like I've let myself down here.  Not enough progress.  My major stumbling
+block has been figuring out how to make plots and how to work in jupyter.  
+On the plus side I have a woring environment in Windows now so I can work
+from my desktop in a much more stable environment.  This week was just really 
+not good for work due to some personal issues.  I'm going to try and get
+on top of things this weekend.
+

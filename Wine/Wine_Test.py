@@ -2,7 +2,7 @@ import pandas as pds
 import matplotlib.pyplot as plt
 import seaborn as sns # new shit
 import math
-# import numpy as np
+import numpy as np
 plt.ion() # new shit
 
 class Wine():
@@ -17,9 +17,9 @@ class Wine():
     # self.Plot_Parameter(reds, "Red")
     # self.Plot_Against_Quality(whit, "White")
     # self.Plot_Against_Quality(reds, "Red")
-    # self.Plot_Against_Color(whit, reds)
-    self.Find_Correlation(whit)
-    self.Find_Correlation(reds)
+    self.Plot_Against_Color(whit, reds)
+    # self.Find_Correlation(whit)
+    # self.Find_Correlation(reds)
 
   def Find_Correlation(self, data):
     result = data.corr()
@@ -46,9 +46,9 @@ class Wine():
       print(title)
       r = math.floor(i / 3);
       c = i % 3
-      sns.violinplot(data=total, x='quality', y=title, hue='color', split=True, ax=[r, c])
-      # ax[r, c].set_xlabel('quality')  # new shit
-      # ax[r, c].set_ylabel(title)
+      sns.violinplot(data=total, x='quality', y=title, hue='color', split=True, ax=ax[r, c])
+      ax[r, c].set_xlabel('quality')  # new shit
+      ax[r, c].set_ylabel(title)
     plt.tight_layout()
 
 
